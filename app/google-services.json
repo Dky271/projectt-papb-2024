@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "639633756468",
+    "firebase_url": "https://bwurger-5cea1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bwurger-5cea1",
+    "storage_bucket": "bwurger-5cea1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639633756468:android:f94adef1e04bed3ee79561",
+        "android_client_info": {
+          "package_name": "dk.mobile.bwurger5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1yyfIWNB8MoE5uV8TjGoeF3MK9EB0F8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639633756468:android:a8db5a32ba4b8662e79561",
+        "android_client_info": {
+          "package_name": "dk.mobile.bwurger6"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1yyfIWNB8MoE5uV8TjGoeF3MK9EB0F8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
