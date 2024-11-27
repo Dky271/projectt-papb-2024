@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -24,39 +23,26 @@ public class BottomFragment extends Fragment implements BurgerRepository.OnBurge
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_bottom, container, false);
-
         RecyclerView recyclerView = view.findViewById(R.id.recyclerViewBurgers);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
         adapter = new BurgerAdapter();
         recyclerView.setAdapter(adapter);
-
-        // Inisialisasi Room Database dan Firebase Repository
         roomDatabase = BurgerDatabase.getInstance(getContext());
         firebaseRepository = new BurgerRepository();
-
-        // Set listener untuk delete
         adapter.setOnBurgerClickListener(burger -> {
             firebaseRepository.deleteBurger(burger);
         });
-
-        // Muat data dari Firebase
         loadBurgers();
-
         return view;
     }
 
     private void loadBurgers() {
-        // Pertama, coba migrasi data dari Room ke Firebase jika belum pernah dilakukan
         firebaseRepository.migrateRoomDataToFirebase(roomDatabase);
-
-        // Ambil data dari Firebase
         firebaseRepository.getAllBurgers(this);
     }
 
     @Override
     public void onBurgersLoaded(List<Burger> burgers) {
-        // Update adapter dengan data dari Firebase
         adapter.setBurgerList(burgers);
     }
 

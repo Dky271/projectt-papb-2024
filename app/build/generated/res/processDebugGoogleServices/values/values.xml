@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://bwurger-5cea1-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">639633756468</string>
+    <string name="google_api_key" translatable="false">AIzaSyB1yyfIWNB8MoE5uV8TjGoeF3MK9EB0F8M</string>
+    <string name="google_app_id" translatable="false">1:639633756468:android:f94adef1e04bed3ee79561</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB1yyfIWNB8MoE5uV8TjGoeF3MK9EB0F8M</string>
+    <string name="google_storage_bucket" translatable="false">bwurger-5cea1.firebasestorage.app</string>
+    <string name="project_id" translatable="false">bwurger-5cea1</string>
+</resources>

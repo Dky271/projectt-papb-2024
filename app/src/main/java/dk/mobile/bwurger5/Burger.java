@@ -16,12 +16,10 @@ public class Burger {
 
 
     public Burger() {}
-
     public Burger(String name, String ingredients) {
         this.name = name;
         this.ingredients = ingredients;
     }
-
 
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }

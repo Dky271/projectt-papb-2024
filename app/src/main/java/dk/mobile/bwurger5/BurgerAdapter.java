@@ -18,7 +18,7 @@ public class BurgerAdapter extends RecyclerView.Adapter<BurgerAdapter.BurgerView
     private OnBurgerClickListener listener;
 
     public interface OnBurgerClickListener {
-        void onDelete(Burger burger); // Listener untuk hapus
+        void onDelete(Burger burger);
     }
 
     public void setOnBurgerClickListener(OnBurgerClickListener listener) {
